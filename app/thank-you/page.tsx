@@ -1,0 +1,49 @@
+export const metadata = { title: "Thank you - Lotus" };
+
+export default function ThankYou() {
+  return (
+    <section className="thanks-hero">
+      <div className="bloom-stage">
+    <svg className="lotus-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <g className="petal-group petal-wide">
+        <path fill="var(--petal-medium)" d="M384,286.897H128c-51.787,0-97.939,11.86-128,44.138C30.061,363.311,76.213,384,128,384s97.939-11.861,128-44.138C286.061,372.139,332.213,384,384,384s97.939-20.689,128-52.966C481.94,298.756,435.788,286.897,384,286.897z"/>
+      </g>
+
+      <g className="petal-group petal-bottom">
+        <path fill="var(--petal-coral)" d="M189.37,375.172c-2.521,5.258-3.991,10.68-3.991,16.26c0,25.565,27.584,48.348,70.621,63.188c43.037-14.84,70.621-37.623,70.621-63.188c0-5.4-1.389-10.651-3.756-15.75l-66.869-35.821L189.37,375.172z"/>
+      </g>
+
+      <g className="petal-group petal-side">
+        <path fill="var(--petal-light)" d="M194.207,216.276c-39.988-32.025-95.218-53.686-141.213-52.941c-0.905,42.244,19.834,87.86,60.902,123.57S207.42,340.651,256,339.864"/>
+        <path fill="var(--petal-light)" d="M256,339.864c48.58,0.787,101.037-17.248,142.104-52.959s61.806-81.325,60.902-123.57c-45.364-0.735-101.518,21.783-141.213,52.94"/>
+      </g>
+
+      <g className="petal-group petal-inner">
+        <path fill="var(--petal-medium)" d="M105.952,216.294c-0.669,29.572,14.66,61.505,45.014,86.505c30.354,24.999,69.127,37.624,105.034,37.074l-52.965-88.286C173.479,229.166,139.948,215.772,105.952,216.294z"/>
+        <path fill="var(--petal-medium)" d="M308.966,251.586L256,339.871c35.907,0.552,74.68-12.074,105.034-37.074c30.354-24.999,45.683-56.931,45.014-86.505C372.519,215.779,338.305,229.775,308.966,251.586z"/>
+      </g>
+
+      <g className="petal-group petal-top">
+        <path fill="var(--petal-light)" d="M256,57.379c-37.657,33.171-61.793,84.096-61.793,141.241c0,13.591,1.405,26.815,3.993,39.548h115.601c2.588-12.733,3.992-25.955,3.992-39.548C317.793,141.476,293.657,90.55,256,57.379z"/>
+      </g>
+
+      <g className="petal-group petal-center">
+        <path fill="var(--petal-coral)" d="M194.207,260.414c0,32.143,24.136,60.79,61.793,79.448c37.657-18.658,61.793-47.305,61.793-79.448s-24.136-60.79-61.793-79.448C218.343,199.624,194.207,228.27,194.207,260.414z"/>
+      </g>
+    </svg>
+
+    <div className="petal-fall" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <h1>Thank you for downloading Lotus</h1>
+  <p className="sub">Your download should start automatically. Once it finishes, open the installer and Lotus will walk you through the rest.</p>
+
+  <div className="thanks-actions">
+    <a className="manual-link" href="/versions/Lotus.Installer.exe" download>Didn&apos;t start? Download again</a>
+    <a className="home-link" href="/">&larr; Back to home</a>
+  </div>
+    </section>
+  );
+}

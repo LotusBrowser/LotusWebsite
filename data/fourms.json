@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "title": "Welcome to the Fourms",
+    "author": "Admin",
+    "content": "This is a simple forum. Create threads and reply.",
+    "createdAt": "2025-10-09T00:00:00.000Z",
+    "replies": [
+      {
+        "id": "r1",
+        "author": "User1",
+        "content": "Thanks!",
+        "createdAt": "2025-10-09T01:00:00.000Z"
+      }
+    ]
+  }
+]
