@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../../lib/supabase";
 import { FaDiscord } from "react-icons/fa";
+import { signInWithDiscord } from "../../lib/discordAuth";
 
 export default function SignIn() {
   const [user, setUser] = useState<{ name: string; avatar?: string } | null>(null);
@@ -14,7 +15,7 @@ export default function SignIn() {
   }, []);
 
   async function signIn() {
-    await supabase.auth.signInWithOAuth({ provider: "discord", options: { redirectTo: `${window.location.origin}/auth/callback`, scopes: "identify guilds guilds.members.read" } });
+    await signInWithDiscord(window.location.pathname);
   }
 
   async function signOut() { await supabase.auth.signOut(); }

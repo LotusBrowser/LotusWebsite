@@ -2,12 +2,13 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { FaBars, FaHandHoldingHeart, FaHome, FaTimes } from "react-icons/fa";
+import { FaBars, FaHandHoldingHeart, FaHome, FaTicketAlt, FaTimes } from "react-icons/fa";
 import { SITE } from "../config/site";
 import SignIn from "./SignIn";
 
 const LINKS = [
   { href: "/", label: "Home", Icon: FaHome },
+  { href: "/tickets", label: "Tickets", Icon: FaTicketAlt },
   { href: "/sponsor", label: "Sponsored Projects", Icon: FaHandHoldingHeart },
 ];
 
@@ -38,7 +39,7 @@ export default function NavBar() {
               <li key={href}>
                 <a
                   href={href}
-                  className={`nav-pill ${pathname === href ? "is-active" : ""}`}
+                  className={`nav-pill ${pathname === href || (href !== "/" && pathname.startsWith(href + "/")) ? "is-active" : ""}`}
                   aria-current={pathname === href ? "page" : undefined}
                 >
                   <Icon aria-hidden="true" />
