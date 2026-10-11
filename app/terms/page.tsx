@@ -5,69 +5,80 @@ export default function Page() {
     <section className="doc mx-auto w-full max-w-3xl px-4 py-10 sm:py-14">
       <div className="page-card">
     <h1>Terms of Service</h1>
-    <p className="effective">Last updated: September 7, 2026</p>
+    <p className="effective">Last updated: October 11, 2026</p>
 
-    <p>These Terms of Service (&quot;Terms&quot;) govern your download and use of Lotus (the &quot;Software&quot;), a desktop web browser for Windows made available from this website (the &quot;Site&quot;). By downloading, installing, or using Lotus, you agree to these Terms. If you do not agree, do not download or use the Software.</p>
+    <p>These Terms of Service (&quot;Terms&quot;) govern your use of this website (the &quot;Site&quot;) and your download and use of Lotus Browser and SysInfo by Lotus (each a &quot;Product&quot;, together the &quot;Software&quot;), as well as the Lotus share service at share.browselotus.net (the &quot;Share Service&quot;). By downloading, installing, or using the Software or the Share Service, you agree to these Terms. If you do not agree, do not download or use them.</p>
 
     <nav className="toc" aria-label="Table of contents">
       <p className="toc-title">On this page</p>
       <ol>
-        <li><a href="#license">1. License to use Lotus</a></li>
-        <li><a href="#eligibility">2. Eligibility</a></li>
-        <li><a href="#acceptable-use">3. Acceptable use</a></li>
-        <li><a href="#third-party">4. Third-party services</a></li>
-        <li><a href="#updates">5. Updates and availability</a></li>
-        <li><a href="#ip">6. Intellectual property</a></li>
-        <li><a href="#disclaimer">7. Disclaimer of warranties</a></li>
-        <li><a href="#liability">8. Limitation of liability</a></li>
-        <li><a href="#termination">9. Termination</a></li>
-        <li><a href="#changes">10. Changes to these Terms</a></li>
-        <li><a href="#law">11. Governing law</a></li>
-        <li><a href="#contact">12. Contact</a></li>
+        <li><a href="#license">1. Software license</a></li>
+        <li><a href="#sysinfo">2. SysInfo and the Share Service</a></li>
+        <li><a href="#eligibility">3. Eligibility</a></li>
+        <li><a href="#acceptable-use">4. Acceptable use</a></li>
+        <li><a href="#third-party">5. Third-party services</a></li>
+        <li><a href="#updates">6. Updates and availability</a></li>
+        <li><a href="#ip">7. Intellectual property</a></li>
+        <li><a href="#disclaimer">8. Disclaimer of warranties</a></li>
+        <li><a href="#liability">9. Limitation of liability</a></li>
+        <li><a href="#termination">10. Termination</a></li>
+        <li><a href="#changes">11. Changes to these Terms</a></li>
+        <li><a href="#law">12. Governing law</a></li>
+        <li><a href="#contact">13. Contact</a></li>
       </ol>
     </nav>
 
-    <h2 id="license">1. License to use Lotus</h2>
-    <p>Lotus is provided to you free of charge. Subject to your compliance with these Terms, we grant you a personal, non-exclusive, non-transferable, revocable license to download, install, and use the Software on devices you own or control, for your own personal or internal business use.</p>
-    <p>This license does not permit you to resell, sublicense, rent, or otherwise commercially distribute the Software, or to reverse engineer, decompile, or disassemble it except to the extent such restriction is prohibited by applicable law.</p>
+    <h2 id="license">1. Software license</h2>
+    <p>Lotus Browser and SysInfo are provided to you free of charge and are licensed under the Lotus Source-Available License (the &quot;License&quot;). The full text is on our <a href="/license">Software License</a> page and is published with each Product&apos;s source code.</p>
+    <p>In short, the License lets you download, view, and run the Software, and modify it for your own personal use. It does not let you distribute, publish, sublicense, or sell the Software or any modified version of it, or use it for commercial purposes. If these Terms and the License differ on your rights in the Software, the License controls.</p>
 
-    <h2 id="eligibility">2. Eligibility</h2>
-    <p>You must be at least 13 years old, or the minimum age of digital consent in your jurisdiction, to download or use Lotus. If you are under the age of majority where you live, you may only use the Software with the involvement and consent of a parent or legal guardian.</p>
-
-    <h2 id="acceptable-use">3. Acceptable use</h2>
-    <p>When using Lotus, you agree not to:</p>
+    <h2 id="sysinfo">2. SysInfo and the Share Service</h2>
+    <p>SysInfo is a utility that creates a report of your system&apos;s hardware and software. It is licensed under the License described in Section 1, which makes its source code available to view but does not make it open source. The rest of this section applies to the optional Share Service.</p>
+    <p>SysInfo can optionally upload a report to the Share Service, which gives you a link to it. By uploading a report you agree that:</p>
     <ul>
-      <li>Use the Software for any unlawful purpose or in violation of any applicable local, state, national, or international law;</li>
-      <li>Attempt to gain unauthorized access to the Software&apos;s underlying code, our servers, or any related systems;</li>
-      <li>Distribute the installer or any modified version of Lotus in a way that suggests it is officially provided by us, without our written permission;</li>
-      <li>Use the Software to transmit malware, or to interfere with the security or normal operation of any device, network, or service.</li>
+      <li>Anyone who has the link can view the report, so you are responsible for who you give it to;</li>
+      <li>You will only upload reports generated by SysInfo, and you will not alter them to include unlawful, harmful, or other people&apos;s personal content;</li>
+      <li>Reports are kept for 30 days and then removed, and we may remove a report earlier if it breaches these Terms or to protect the service;</li>
+      <li>You will review a report before sharing it, as SysInfo&apos;s privacy filter removes only the identifiers described in the Privacy Policy.</li>
     </ul>
 
-    <h2 id="third-party">4. Third-party services</h2>
-    <p>Lotus&apos;s address bar and new tab search are powered by DuckDuckGo. Your use of DuckDuckGo&apos;s search service is subject to DuckDuckGo&apos;s own terms and privacy practices, which we do not control. Any website you visit using Lotus is likewise governed by that website&apos;s own terms and policies. We are not responsible for the content, availability, or practices of third-party sites or services accessed through the Software.</p>
+    <h2 id="eligibility">3. Eligibility</h2>
+    <p>You must be at least 13 years old, or the minimum age of digital consent in your jurisdiction, to download or use the Software or the Share Service. If you are under the age of majority where you live, you may only use them with the involvement and consent of a parent or legal guardian.</p>
 
-    <h2 id="updates">5. Updates and availability</h2>
-    <p>We may release updated versions of Lotus from time to time, which may add, change, or remove features. We do not guarantee that any particular version of the Software, or the Software itself, will remain available indefinitely, and we may modify or discontinue the Software, or this Site, at any time without liability to you.</p>
+    <h2 id="acceptable-use">4. Acceptable use</h2>
+    <p>When using the Site, the Software, or the Share Service, you agree not to:</p>
+    <ul>
+      <li>Use them for any unlawful purpose or in violation of any applicable local, state, national, or international law;</li>
+      <li>Attempt to gain unauthorized access to our servers, the Share Service, or any related systems, or to other people&apos;s uploaded reports;</li>
+      <li>Distribute, publish, or otherwise make available the Software, or any modified version of it, to others, except as the License allows;</li>
+      <li>Use the Software or the Share Service to transmit malware, or to interfere with the security or normal operation of any device, network, or service, including by automated or excessive uploads.</li>
+    </ul>
 
-    <h2 id="ip">6. Intellectual property</h2>
-    <p>Lotus, including its name, logo, design, and underlying code, is the property of its creator and is protected by applicable intellectual property laws. Except for the limited license granted in Section 1, nothing in these Terms transfers any ownership rights to you.</p>
+    <h2 id="third-party">5. Third-party services</h2>
+    <p>Lotus Browser&apos;s address bar and new tab search are powered by DuckDuckGo. Your use of DuckDuckGo&apos;s search service is subject to DuckDuckGo&apos;s own terms and privacy practices, which we do not control. Any website you visit using Lotus Browser is likewise governed by that website&apos;s own terms and policies. Our source code and some downloads may be hosted on GitHub, and sign-in on this Site uses Discord, each under their own terms. We are not responsible for the content, availability, or practices of third-party sites or services.</p>
 
-    <h2 id="disclaimer">7. Disclaimer of warranties</h2>
-    <p>The Software is provided &quot;as is&quot; and &quot;as available,&quot; without warranties of any kind, whether express, implied, or statutory, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the Software will be uninterrupted, error-free, or completely secure.</p>
+    <h2 id="updates">6. Updates and availability</h2>
+    <p>We may release updated versions of the Software from time to time, which may add, change, or remove features. We do not guarantee that any particular version of the Software, the Share Service, or this Site will remain available indefinitely, and we may modify or discontinue any of them at any time without liability to you.</p>
 
-    <h2 id="liability">8. Limitation of liability</h2>
-    <p>To the fullest extent permitted by law, we will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, profits, or revenue, arising out of or related to your use of, or inability to use, the Software, even if we have been advised of the possibility of such damages.</p>
+    <h2 id="ip">7. Intellectual property</h2>
+    <p>Lotus, including its name, logo, and design, and the source code of both Products, is the property of its creator and is protected by applicable intellectual property laws. The Software is licensed, not sold, and the License grants only the rights it states. It does not grant any right to use the Lotus name or logo. Nothing in these Terms transfers any ownership rights to you.</p>
 
-    <h2 id="termination">9. Termination</h2>
-    <p>These Terms remain in effect until terminated. We may suspend or terminate your license to use Lotus at any time if you fail to comply with these Terms. You may terminate this agreement at any time by uninstalling the Software and ceasing all use of it.</p>
+    <h2 id="disclaimer">8. Disclaimer of warranties</h2>
+    <p>The Software and the Share Service are provided &quot;as is&quot; and &quot;as available,&quot; without warranties of any kind, whether express, implied, or statutory, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that they will be uninterrupted, error-free, or completely secure. SysInfo reports are generated from information your system provides and may be incomplete or inaccurate, particularly on Linux, where some Windows-specific details are unavailable.</p>
 
-    <h2 id="changes">10. Changes to these Terms</h2>
-    <p>We may update these Terms from time to time. If we make material changes, we will update the &quot;Last updated&quot; date at the top of this page. Your continued use of Lotus after changes take effect constitutes acceptance of the revised Terms.</p>
+    <h2 id="liability">9. Limitation of liability</h2>
+    <p>To the fullest extent permitted by law, we will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, profits, or revenue, arising out of or related to your use of, or inability to use, the Software or the Share Service, even if we have been advised of the possibility of such damages.</p>
 
-    <h2 id="law">11. Governing law</h2>
+    <h2 id="termination">10. Termination</h2>
+    <p>These Terms remain in effect until terminated. Your license to the Software ends automatically if you breach the License, as the License provides, and we may suspend your access to the Share Service at any time if you fail to comply with these Terms. You may terminate this agreement at any time by deleting all copies of the Software and ceasing all use of it.</p>
+
+    <h2 id="changes">11. Changes to these Terms</h2>
+    <p>We may update these Terms from time to time. If we make material changes, we will update the &quot;Last updated&quot; date at the top of this page. Your continued use of the Software or the Share Service after changes take effect constitutes acceptance of the revised Terms.</p>
+
+    <h2 id="law">12. Governing law</h2>
     <p>These Terms are governed by the laws of the jurisdiction in which the Software&apos;s creator resides, without regard to conflict-of-law principles, unless otherwise required by mandatory consumer protection laws applicable to you.</p>
 
-    <h2 id="contact">12. Contact</h2>
+    <h2 id="contact">13. Contact</h2>
     <p>Questions about these Terms can be sent to <a href="mailto:staydrifting@voltaccept.com">staydrifting@voltaccept.com</a>.</p>
   </div>
     </section>

@@ -42,7 +42,7 @@ export default function ThankYou() {
 
   <div className="thanks-actions">
     <a className="manual-link" href="/versions/Lotus.Installer.exe" download>Didn&apos;t start? Download again</a>
-    <a className="home-link" href="/">&larr; Back to home</a>
+    <a className="home-link" href="/products/lotus">&larr; Back to Lotus Browser</a>
   </div>
     </section>
   );

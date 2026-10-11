@@ -4,7 +4,7 @@ import { SITE } from "./config/site";
 
 export const metadata = {
   title: SITE.title,
-  description: "Lotus is a fast, quiet browser for Windows - tabs, bookmarks and downloads, without the clutter.",
+  description: SITE.tagline,
 };
 
 export const viewport = {
