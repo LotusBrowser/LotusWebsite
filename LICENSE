@@ -1,0 +1,69 @@
+Lotus Website Source-Available License
+
+Copyright (c) 2026 Lotus. All rights reserved.
+
+1. DEFINITIONS
+"Website" means all source code, markup, stylesheets, scripts, configuration
+files, designs, text, images, and other assets in this repository, and any
+website built or generated from them.
+
+2. GRANT
+You are granted a non-exclusive, non-transferable, revocable license to:
+  (a) download, view, and run the Website locally on your own device;
+  (b) modify the Website for your own personal use.
+
+3. RESTRICTIONS
+You may not:
+  (a) deploy, host, publish, or otherwise make the Website, or any modified
+      version of it, accessible to any third party, whether over the
+      internet, a private network, or otherwise, including through any
+      hosting or deployment platform (such as Vercel, Netlify, Cloudflare
+      Pages, or GitHub Pages), server, preview deployment, or domain;
+  (b) distribute, publish, sublicense, sell, or otherwise make available
+      the Website, in source or built form, to any third party;
+  (c) distribute, publish, or make available any modified version of the
+      Website, or any work derived from it, to any third party;
+  (d) use the Website or any modified version for commercial purposes;
+  (e) use the Licensor's names, logos, branding, or domain names, or
+      operate any website that imitates, impersonates, or could reasonably
+      be mistaken for the official website;
+  (f) remove or alter this license or copyright notices.
+
+4. GITHUB
+This Website is hosted on GitHub. GitHub's Terms of Service allow
+users to view and fork public repositories within GitHub. Such forks
+may be used only in accordance with this license. Forking does not grant
+any right to redistribute the Website or any modified version beyond
+what this license permits, and forks may be used only for personal use.
+
+5. CONTRIBUTIONS
+If you submit changes to the Licensor (e.g. a pull request), you grant the
+Licensor a perpetual, worldwide, royalty-free license to use, modify, and
+distribute your contribution as part of the Website under any terms.
+
+6. THIRD-PARTY MATERIALS
+Third-party libraries, fonts, and assets included in or used by the Website
+remain subject to their own licenses. This license does not alter those
+terms and does not grant any rights in third-party materials.
+
+7. LIVE WEBSITE
+This license covers the source code repository only. The officially hosted
+website (deployed by the Licensor on Vercel) is a separate service, and its
+use is governed by any terms of use published on it. Nothing in this license
+grants any right to deploy, mirror, or host a copy of it.
+
+8. OWNERSHIP
+The Website is licensed, not sold. The Licensor retains all rights not
+expressly granted here.
+
+9. TERMINATION
+This license terminates automatically if you breach any of its terms.
+On termination you must delete all copies of the Website and any
+modified versions.
+
+10. NO WARRANTY
+THE WEBSITE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE LICENSOR BE
+LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF
+THE WEBSITE.

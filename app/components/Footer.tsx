@@ -9,7 +9,7 @@ export default function Footer() {
           <a href={SITE.discordUrl} target="_blank" rel="noopener noreferrer">Lotus Discord</a>·
           <a href={SITE.githubUrl} target="_blank" rel="noopener noreferrer">GitHub Source</a>
         </div>
-        <p>{SITE.name} created with ❤ by {SITE.creator}</p>
+        <p>© 2026 {SITE.name}. <a href={SITE.licenseUrl} target="_blank" rel="noopener noreferrer">Source-Available License</a></p>
       </div>
     </footer>
   );

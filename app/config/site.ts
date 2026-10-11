@@ -6,5 +6,5 @@ export const SITE = {
   downloadUrl: '/versions/Lotus.Installer.exe',
   discordUrl: 'https://discord.gg/F8ZHvA9Z5C',
   githubUrl: 'https://github.com/LotusBrowser/Lotus.Source',
-  creator: 'Allen Lambert Jr',
+  licenseUrl: 'https://github.com/LotusBrowser/LotusWebsite/blob/main/LICENSE'
 };
