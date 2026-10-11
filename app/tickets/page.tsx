@@ -54,7 +54,7 @@ export default function TicketsPage() {
       <header className="page-card mb-8">
         <div className="flex flex-wrap items-start justify-between gap-3">
           <h1 className="display-title">Support Tickets</h1>
-          {user?.isStaff && <span className="staff-badge">Staff</span>}
+          {user?.isStaff && <span className="staff-badge">Support</span>}
         </div>
         <p className="lead mt-3">
           {user?.isStaff
