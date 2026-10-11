@@ -40,5 +40,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-#visual studio code
+# visual studio code
 .vscode/*
+
+# package manager lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
