@@ -3,7 +3,7 @@ import { cookies } from "next/headers";
 import type { TicketUser } from "./ticketTypes";
 
 // Anyone with this Discord role (in the guild below) gets the full ticket panel.
-export const TICKET_STAFF_ROLE_ID = "1546661205228396554";
+export const TICKET_STAFF_ROLE_ID = "1548339923537494037";
 // The Discord server the role lives in. Override with DISCORD_GUILD_ID in your env.
 export const DISCORD_GUILD_ID = process.env.DISCORD_GUILD_ID || "929222478537056316";
 
