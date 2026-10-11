@@ -101,7 +101,7 @@ export default function TicketPage() {
                   <div>
                     <div className="bubble-head">
                       <strong>{m.authorName}</strong>
-                      {m.staff && <span className="staff-badge">Support</span>}
+                      {m.staff && <span className="staff-badge">Support Staff</span>}
                       <time>{formatDate(m.createdAt)}</time>
                     </div>
                     <p className="bubble-body">{m.content}</p>
