@@ -25,6 +25,7 @@
   --ok: #3f9b2b;
   --bad: #c4443a;
   --bar-h: 3.5rem;
+  --footer-bar-h: 2.25rem;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-display: "Fraunces", Georgia, serif;
 }
@@ -42,10 +43,19 @@ body {
   min-height: 100dvh;
   overflow-x: hidden;
   background: url("/background.webp") center/cover no-repeat;
-  backdrop-filter: blur(2.5px);
+  padding-bottom: calc(var(--footer-bar-h) + var(--footer-full-h, 5.5rem) + env(safe-area-inset-bottom));
   color: var(--plum);
   font-family: var(--font);
   line-height: 1.5;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  backdrop-filter: blur(2.5px);
 }
 
 img { max-width: 100%; }
@@ -638,25 +648,37 @@ table.data-table tr:last-child td { border-bottom: none; }
 
 /* Footer */
 .site-footer {
-  flex-shrink: 0;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
   width: 100%;
-  margin-top: 3rem;
   padding-bottom: env(safe-area-inset-bottom);
   background: linear-gradient(180deg, var(--plum-1), var(--plum-2));
 }
 
-.site-footer::before {
-  content: "";
+.footer-bricks {
   display: block;
-  height: 2.25rem;
+  width: 100%;
+  height: var(--footer-bar-h);
+  padding: 0;
+  cursor: pointer;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0 3px, transparent 3px),
     repeating-linear-gradient(90deg, transparent 0 calc(3.5rem - 3px), var(--plum-edge) calc(3.5rem - 3px) 3.5rem),
     linear-gradient(180deg, var(--plum-1), var(--plum-2));
+  border: 0;
   border-top: 4px solid var(--plum-edge);
   border-bottom: 4px solid var(--plum-edge);
   box-shadow: 0 -6px 14px rgba(92, 36, 54, 0.3);
 }
+
+.footer-bricks:hover { filter: brightness(1.12); }
+.footer-bricks:focus-visible { outline-offset: -6px; }
+
+.footer-panel { overflow: hidden; }
+.footer-panel.is-animating { transition: height 0.35s ease; }
 
 .footer-inner {
   max-width: 1100px;
