@@ -1,4 +1,5 @@
 import { DownloadButton } from "../../components";
+import { getLatestRelease } from "../../../lib/releases";
 import { SITE, PRODUCTS } from "../../config/site";
 
 const svgProps = { className: "icon", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.6 } as const;
@@ -74,7 +75,10 @@ export const metadata = {
 const BROWSER_TAGLINE =
   "Lotus Browser is a fast, quiet browser for Windows - tabs, bookmarks and downloads, without the clutter. Searches run on DuckDuckGo, so they aren't tracked back to you.";
 
-export default function LotusBrowserPage() {
+export default async function LotusBrowserPage() {
+  const latest = await getLatestRelease();
+  const downloadUrl = latest?.url ?? PRODUCTS.lotus.downloadUrl;
+
   return (
     <div>
       <header className="hero">
@@ -104,10 +108,14 @@ export default function LotusBrowserPage() {
       </header>
 
       <section className="cta" id="download">
-        <DownloadButton url={PRODUCTS.lotus.downloadUrl} />
+        <DownloadButton url={downloadUrl} />
         <p className="fine-print">
           Free · Windows 10 &amp; 11 ·{" "}
           <a href={SITE.discordUrl} target="_blank" rel="noopener noreferrer">The Update Notes are in Our Discord</a>
+        </p>
+        <p className="fine-print">
+          {latest && <>Version {latest.version} · </>}
+          <a href="/products/lotus/versions">Previous versions</a>
         </p>
         <p className="fine-print">
           By downloading, you agree to the <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a>.

@@ -1,6 +1,12 @@
+import { getLatestRelease } from "../../lib/releases";
+import { PRODUCTS } from "../config/site";
+
 export const metadata = { title: "Thank you - Lotus" };
 
-export default function ThankYou() {
+export default async function ThankYou() {
+  const latest = await getLatestRelease();
+  const downloadUrl = latest?.url ?? PRODUCTS.lotus.downloadUrl;
+
   return (
     <section className="thanks-hero">
       <div className="bloom-stage">
@@ -41,7 +47,7 @@ export default function ThankYou() {
   <p className="sub">Your download should start automatically. Once it finishes, open the installer and Lotus will walk you through the rest.</p>
 
   <div className="thanks-actions">
-    <a className="manual-link" href="/versions/Lotus.Installer.exe" download>Didn&apos;t start? Download again</a>
+    <a className="manual-link" href={downloadUrl} download>Didn&apos;t start? Download again</a>
     <a className="home-link" href="/products/lotus">&larr; Back to Lotus Browser</a>
   </div>
     </section>

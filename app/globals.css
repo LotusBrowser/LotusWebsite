@@ -1247,3 +1247,29 @@ table.data-table tr:last-child td { border-bottom: none; }
   .nav-dropdown > .nav-pill { width: 100%; justify-content: flex-start; min-height: 3rem; }
   .nav-dropdown .nav-caret { margin-left: auto; }
 }
+
+/* Previous versions page */
+.version-status { margin: 0; text-align: center; color: var(--plum-soft); }
+.version-list { display: grid; gap: 1rem; }
+.version-item {
+  padding: 1rem 1.1rem;
+  background: var(--card);
+  border: 2px solid var(--chrome-dark);
+  border-radius: 6px;
+}
+.version-head { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; }
+.version-name {
+  display: flex; align-items: center; gap: 0.6rem; margin: 0;
+  color: var(--rose-deep); font-family: var(--font-display); font-size: 1.25rem; font-weight: 500;
+}
+.version-badge {
+  padding: 0.1rem 0.55rem; border-radius: 999px;
+  background: var(--ok); color: #fff;
+  font-family: var(--font); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+}
+.version-download { padding: 0.45rem 1.1rem; font-size: 0.9rem; }
+.version-meta { margin: 0.3rem 0 0; color: var(--plum-soft); font-size: 0.85rem; }
+.version-notes { margin: 0.6rem 0 0; white-space: pre-line; }
+.version-hash { margin-top: 0.6rem; font-size: 0.8rem; color: var(--plum-soft); }
+.version-hash summary { cursor: pointer; }
+.version-hash code { display: block; margin-top: 0.3rem; overflow-wrap: anywhere; color: var(--plum); }

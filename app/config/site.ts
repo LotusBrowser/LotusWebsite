@@ -16,7 +16,8 @@ export const PRODUCTS = {
       'A fast, quiet browser for Windows. Tabs, bookmarks and downloads without the clutter, with searches on DuckDuckGo.',
     shortBlurb: 'A fast, quiet browser for Windows',
     href: '/products/lotus',
-    downloadUrl: '/versions/Lotus.Installer.exe',
+    // Fallback only: pages resolve the newest installer from public/versions at build time.
+    downloadUrl: '/products/lotus/versions',
     sourceUrl: 'https://github.com/LotusBrowser/Lotus.Source',
     tags: ['Windows 10 & 11', 'Free']
   },
