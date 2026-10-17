@@ -3,6 +3,34 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { SITE } from "../config/site";
 
+const FOOTER_SECTIONS = [
+  {
+    title: "Products",
+    links: [
+      { label: "Lotus Browser", href: "/products/lotus" },
+      { label: "Previous Versions", href: "/products/lotus/versions" },
+      { label: "SysInfo", href: "/products/sysinfo" },
+    ],
+  },
+  {
+    title: "Community",
+    links: [
+      { label: "Lotus Discord", href: SITE.discordUrl, external: true },
+      { label: "GitHub", href: SITE.githubUrl, external: true },
+      { label: "Sponsored Projects", href: "/sponsor" },
+      { label: "Support Tickets", href: "/tickets" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
+      { label: "Software License", href: "/license" },
+    ],
+  },
+];
+
 export default function Footer() {
   const contentRef = useRef<HTMLDivElement>(null);
   const fullRef = useRef(0);
@@ -76,12 +104,25 @@ export default function Footer() {
         inert={height <= 0}
       >
         <div ref={contentRef} className="footer-inner">
-          <div className="legal-links">
-            <a href="/products/lotus">Lotus Browser</a>·<a href="/products/lotus/versions">Previous Versions</a>·<a href="/products/sysinfo">SysInfo</a>·
-            <a href="/privacy">Privacy Policy</a>·<a href="/terms">Terms of Service</a>·<a href="/license">Software License</a>·
-            <a href={SITE.discordUrl} target="_blank" rel="noopener noreferrer">Lotus Discord</a>·
-            <a href={SITE.githubUrl} target="_blank" rel="noopener noreferrer">GitHub</a>
-          </div>
+          <nav className="footer-columns" aria-label="Footer">
+            {FOOTER_SECTIONS.map((section) => (
+              <div key={section.title} className="footer-col">
+                <h2 className="footer-heading">{section.title}</h2>
+                <ul>
+                  {section.links.map((link) => (
+                    <li key={link.href}>
+                      <a
+                        href={link.href}
+                        {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </nav>
           <p>© 2026 {SITE.name}. <a href={SITE.licenseUrl} target="_blank" rel="noopener noreferrer">Source-Available License</a></p>
         </div>
       </div>

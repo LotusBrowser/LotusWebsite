@@ -691,8 +691,35 @@ table.data-table tr:last-child td { border-bottom: none; }
 }
 
 .footer-inner p { margin: 0; }
-.footer-inner .legal-links { margin-bottom: 0.4rem; }
-.footer-inner .legal-links a { margin: 0 0.5rem; }
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem 1.5rem;
+  max-width: 720px;
+  margin: 0 auto 1rem;
+  text-align: left;
+}
+.footer-heading {
+  margin: 0 0 0.4rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(245, 217, 225, 0.25);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.footer-col ul { margin: 0; padding: 0; list-style: none; }
+.footer-col li { margin: 0.2rem 0; }
+.footer-col a { text-decoration: none; }
+.footer-col a:hover, .footer-col a:focus-visible { text-decoration: underline; }
+.footer-inner > p { padding-top: 0.75rem; border-top: 1px solid rgba(245, 217, 225, 0.18); text-align: center; }
+@media (max-width: 479px) {
+  .footer-columns { gap: 0.75rem; }
+  .footer-inner { font-size: 0.82rem; }
+  .footer-heading { font-size: 0.7rem; letter-spacing: 0.04em; }
+}
 .site-footer a { color: var(--petal-light); }
 
 /* Thank-you bloom */
